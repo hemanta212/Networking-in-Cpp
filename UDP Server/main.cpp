@@ -25,7 +25,7 @@ int main() {
     sockaddr_in serverHint;
     serverHint.sin_addr.S_un.S_addr = ADDR_ANY;
     serverHint.sin_family = AF_INET;
-    serverHint.sin_port = htons(54000); // convert to little to big endian
+    serverHint.sin_port = htons(55000); // convert to little to big endian
 
     if( bind(insock, (sockaddr*)&serverHint, sizeof(serverHint)) == SOCKET_ERROR) {
         cerr << "Can't bind socket! Quitting..." << endl;

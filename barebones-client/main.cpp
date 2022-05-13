@@ -13,7 +13,7 @@ using std::string;
 int main() {
 
 	string ipAddress = "127.0.0.1"; // IP Addr of the server
-	int port = 54000; // listening port # on the server
+	int port = 55000; // listening port # on the server
 
 	// Initlialize WinSock
 	WSAData data;

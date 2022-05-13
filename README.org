@@ -1,16 +1,16 @@
 #+TITLE: Networking in CPP
 
 Small projects made to learn networking in the C++ programming language.
-The environment used was Windows VS 2022, Unity, Linux.
+The environments used were Windows VS 2022, Unity, Linux.
 
 *Resources*
-Youtube: [[https://www.youtube.com/playlist?list=PLZo2FfoMkJeEogzRXEJeTb3xpA2RAzwCZ][Sloan Kelly]] [[[https://www.youtube.com/playlist?list=PLZo2FfoMkJeEogzRXEJeTb3xpA2RAzwCZ][Networking in C++]]] [[[https://www.youtube.com/playlist?list=PLUxTWChTDL2Y0WDQlwoxlpQHEOzm1K8xb][Web Server in C++]]]
+- Youtube: [[https://www.youtube.com/playlist?list=PLZo2FfoMkJeEogzRXEJeTb3xpA2RAzwCZ][Sloan Kelly]] [[[https://www.youtube.com/playlist?list=PLZo2FfoMkJeEogzRXEJeTb3xpA2RAzwCZ][Networking in C++]]] [[[https://www.youtube.com/playlist?list=PLUxTWChTDL2Y0WDQlwoxlpQHEOzm1K8xb][Web Server in C++]]]
 
 * Barebones Server/Client: VS 2022 Project
 A simple tcp server based on Winsock API. The project was build using the MS VS 2022 tools.
-Demonstrate a working server and a single client connection and message echoing.
+Demonstrate a working server and a single client connection and message echoing. The server can be connected via =telnet= as well.
 
-* TODO Barebones Server/Client: In Linux
+* TODO Barebones Server/Client: Linux
 
 * Network Layer Abstraction (OOP) : VS 2022 Project
 Building a flexible abstraction layer on top of barebones server with OOP concepts to present a simple minimal server api with a callback.
@@ -21,5 +21,5 @@ An extension to the barebones server, which upon receiving a command 'quote', se
 * Multiple chat clients, single threaded: VS 2022 Project
 A chat app as an extension on top of barebones tcp server to support multiple clients. It is done without the use of multi-threading. =select()= and =file descriptor sets= are used along with file descriptor functions =FD_SET=, =FD_CLR=, =FD_ZERO= to support multiple clients.
 
-* ACTIVE UDP server/client : VS 2022 Project
-* TODO UDP server/client : Unity Project
+* UDP server/client : VS 2022 Project
+A barebone server and client based on =UDP=. The client supports sending messages to the server with cli arguments. Also, =netcat= can be used as well to communicate with the UDP server.
