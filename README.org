@@ -1,0 +1,25 @@
+#+TITLE: Networking in CPP
+
+Small projects made to learn networking in the C++ programming language.
+The environment used was Windows VS 2022, Unity, Linux.
+
+*Resources*
+Youtube: [[https://www.youtube.com/playlist?list=PLZo2FfoMkJeEogzRXEJeTb3xpA2RAzwCZ][Sloan Kelly]] [[[https://www.youtube.com/playlist?list=PLZo2FfoMkJeEogzRXEJeTb3xpA2RAzwCZ][Networking in C++]]] [[[https://www.youtube.com/playlist?list=PLUxTWChTDL2Y0WDQlwoxlpQHEOzm1K8xb][Web Server in C++]]]
+
+* Barebones Server/Client: VS 2022 Project
+A simple tcp server based on Winsock API. The project was build using the MS VS 2022 tools.
+Demonstrate a working server and a single client connection and message echoing.
+
+* TODO Barebones Server/Client: In Linux
+
+* Network Layer Abstraction (OOP) : VS 2022 Project
+Building a flexible abstraction layer on top of barebones server with OOP concepts to present a simple minimal server api with a callback.
+
+* Quotes of the Day: VS 2022 Project
+An extension to the barebones server, which upon receiving a command 'quote', sends out a random quote that is read from a text file 'wisdom.txt'.
+
+* Multiple chat clients, single threaded: VS 2022 Project
+A chat app as an extension on top of barebones tcp server to support multiple clients. It is done without the use of multi-threading. =select()= and =file descriptor sets= are used along with file descriptor functions =FD_SET=, =FD_CLR=, =FD_ZERO= to support multiple clients.
+
+* ACTIVE UDP server/client : VS 2022 Project
+* TODO UDP server/client : Unity Project
